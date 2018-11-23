@@ -22,4 +22,11 @@ class ManagerTenant
 
         return $tenant;
     }
+
+    public function identify()
+    {
+        $tenant = $this->tenant();
+
+        return $tenant->id;
+    }
 }
